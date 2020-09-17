@@ -1,0 +1,44 @@
+{
+  "model_settings": {
+    "input_size": 42,
+    "output_size": 30,
+    "hidden_size": 4096,
+    "num_layers": 6,
+    "padding" : 50,
+    "dropout": 0.4,
+    "batch_size": 1,
+    "num_workers": 0
+  },
+  "learning_rate_settings":{
+    "learning_rate" : 0.0001
+  },
+  "trans_settings" : {
+    "nhead" : 7
+  },
+  "train_settings": {
+    "num_iteration": 125
+  },
+  "train_paths": {
+    "path_to_numpy_file_train": "../train/numpy/all_files_normalized.npy",
+    "path_to_csv_train": "../3_linked_to_npy/islr_full_linked_train.txt"
+  },
+  "val_paths": {
+    "path_to_numpy_file_val": "../val/numpy/all_files_normalized.npy",
+    "path_to_csv_val": "../3_linked_to_npy/islr_full_linked_val.txt"
+  },
+  "test_paths": {
+    "path_to_numpy_file_test": "../test/numpy/all_files_normalized.npy",
+    "path_to_csv_test": "../3_linked_to_npy/islr_full_linked_val.txt"
+  },
+  "vocab_file": {
+    "path_to_vocab_file_all": "../1_vocab_list/vocab_merged.txt"
+  },
+  "save_load": {
+    "save_model_folder_path": "../target_directory",
+    "load_model": 0,
+    "load_model_path": "",
+    "load_folder_path": ""
+  },
+  "loss_type": "CrossEntropyLoss"
+}
+
